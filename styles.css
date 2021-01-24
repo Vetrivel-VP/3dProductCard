@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  perspective: 1000px;
+}
+
+.container {
+  /* background: lightblue; */
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  transform-style: preserve-3d;
+  min-height: 80vh;
+  width: 30rem;
+  /* background: lightcoral; */
+  box-shadow: 0 20px 25px rgba(0, 0, 0, 0.2), 0px 0px 50px rgba(0, 0, 0, 0.2);
+  border-radius: 30px;
+  padding: 0rem 5rem;
+}
+
+.imgBox {
+  min-height: 35vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imgBox img {
+  width: 20rem;
+  z-index: 1;
+  transition: all 0.5s ease-out;
+}
+
+.imgBox .circle {
+  width: 13rem;
+  height: 13rem;
+  background: linear-gradient(to right, #000, #be9f67);
+  position: absolute;
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.infoBox h1 {
+  font-size: 2.2rem;
+  transition: all 0.5s ease-out;
+}
+
+.infoBox h3 {
+  font-size: 1.1rem;
+  padding: 2rem 0rem;
+  color: #585858;
+  font-weight: lighter;
+  text-align: center;
+  transition: all 0.5s ease-out;
+}
+
+.sizes {
+  display: flex;
+  justify-content: space-between;
+  transition: all 0.5s ease-out;
+}
+
+.sizes button {
+  padding: 0.5rem 1rem;
+  background: none;
+  border: none;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 30px;
+  cursor: pointer;
+  font-weight: bold;
+  color: #585858;
+}
+
+.sizes button.active {
+  background: #585858;
+  color: #fff;
+}
+
+.purchase {
+  margin-top: 3rem;
+}
+
+.purchase button {
+  width: 100%;
+  padding: 1rem 0rem;
+  background: linear-gradient(to right, #000, #be9f67);
+  color: #fff;
+  cursor: pointer;
+  border-radius: 30px;
+  font-weight: bolder;
+  border: none;
+  transition: all 0.5s ease-out;
+}
